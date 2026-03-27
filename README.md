@@ -3,8 +3,8 @@
 ## Descripción
 Es un programa en C++ que sirve para llevar el control de los estudiantes que esperan atención. Funciona como una cola: el primero que se registra es el primero en ser atendido.
 
-## Estructura que usé
-Usé una **lista enlazada simple** que hice yo mismo con punteros. Elegí esta estructura porque se puede agregar y quitar estudiantes fácilmente sin tener que mover todo como pasaría con un arreglo. Además no hay un límite de estudiantes.
+## Estructura 
+Se uso una **lista enlazada simple** con punteros. Elegí esta estructura porque se puede agregar y quitar estudiantes fácilmente sin tener que mover todo como pasaría con un arreglo. Además no hay un límite de estudiantes.
 
 ### Operaciones:
 - **Registrar** (encolar): se agrega al final de la lista.
@@ -12,7 +12,7 @@ Usé una **lista enlazada simple** que hice yo mismo con punteros. Elegí esta e
 - **Mostrar**: recorre la lista desde el inicio.
 - **Buscar**: recorre la lista hasta encontrar el nombre.
 
-## Complejidad (en palabras simples)
+## Complejidad
 - Registrar y atender son rápidos: siempre toman el mismo tiempo sin importar cuántos estudiantes haya.
 - Mostrar y buscar toman más tiempo si hay muchos estudiantes, porque hay que revisar uno por uno.
 
