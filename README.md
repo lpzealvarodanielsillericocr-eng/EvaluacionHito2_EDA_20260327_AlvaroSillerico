@@ -6,9 +6,9 @@ Aplicación de consola en C++ que permite gestionar una cola de estudiantes que 
 
 ## Estructura de datos utilizada
 Se emplea una **lista enlazada simple** con punteros `frente` y `final` para simular una cola. Cada nodo almacena:
-Nombre del estudiante (`string`)
-Código del estudiante (`string`)
-Puntero al siguiente nodo
+- Nombre del estudiante (`string`)
+- Código del estudiante (`string`)
+- Puntero al siguiente nodo
 
 **Justificación**: La lista enlazada permite inserción y eliminación eficiente en los extremos (O(1) para encolar y desencolar) sin necesidad de desplazar elementos, a diferencia de un arreglo estático. Además, no requiere un tamaño máximo predefinido.
 
