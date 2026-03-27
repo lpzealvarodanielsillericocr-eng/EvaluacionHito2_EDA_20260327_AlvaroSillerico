@@ -10,8 +10,6 @@ Se emplea una **lista enlazada simple** con punteros `frente` y `final` para sim
 - Código del estudiante (`string`)
 - Puntero al siguiente nodo
 
-**Justificación**: La lista enlazada permite inserción y eliminación eficiente en los extremos (O(1) para encolar y desencolar) sin necesidad de desplazar elementos, a diferencia de un arreglo estático. Además, no requiere un tamaño máximo predefinido.
-
 ## Complejidad algorítmica
 | Operación | Complejidad | Explicación |
 |-----------|-------------|-------------|
