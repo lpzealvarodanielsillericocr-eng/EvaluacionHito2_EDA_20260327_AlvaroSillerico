@@ -1,57 +1,43 @@
-# EvaluacionHito2_EDA_20260327_AlvaroSillerico
-# Sistema de Gestión de Turnos para Estudiantes
+# Gestión de Turnos para Estudiantes
 
 ## Descripción
-Aplicación de consola en C++ que permite gestionar una cola de estudiantes que esperan atención. El sistema utiliza una lista enlazada simple implementada manualmente para mantener el orden FIFO (primero en llegar, primero en ser atendido).
+Es un programa en C++ que sirve para llevar el control de los estudiantes que esperan atención. Funciona como una cola: el primero que se registra es el primero en ser atendido.
 
-## Estructura de datos utilizada
-Se emplea una **lista enlazada simple** con punteros `frente` y `final` para simular una cola. Cada nodo almacena:
-- Nombre del estudiante (`string`)
-- Código del estudiante (`string`)
-- Puntero al siguiente nodo
+## Estructura que usé
+Usé una **lista enlazada simple** que hice yo mismo con punteros. Elegí esta estructura porque se puede agregar y quitar estudiantes fácilmente sin tener que mover todo como pasaría con un arreglo. Además no hay un límite de estudiantes.
 
-## Complejidad algorítmica
-| Operación | Complejidad | Explicación |
-|-----------|-------------|-------------|
-| Registrar (encolar) | O(1) | Se inserta al final actualizando el puntero `final`. |
-| Atender (desencolar) | O(1) | Se elimina el primer nodo actualizando `frente`. |
-| Mostrar | O(n) | Se recorre toda la lista para mostrar cada estudiante. |
-| Buscar por nombre | O(n) | En el peor caso se recorre toda la lista hasta encontrar el nombre. |
+### Operaciones:
+- **Registrar** (encolar): se agrega al final de la lista.
+- **Atender** (desencolar): se quita al primero.
+- **Mostrar**: recorre la lista desde el inicio.
+- **Buscar**: recorre la lista hasta encontrar el nombre.
 
-## Instrucciones de compilación y ejecución
+## Complejidad (en palabras simples)
+- Registrar y atender son rápidos: siempre toman el mismo tiempo sin importar cuántos estudiantes haya.
+- Mostrar y buscar toman más tiempo si hay muchos estudiantes, porque hay que revisar uno por uno.
+
+## Cómo compilar y ejecutar
 
 ### Requisitos
-- Compilador de C++ (g++ recomendado)
-- Sistema operativo Windows, macOS o Linux
+- Tener un compilador de C++ (como g++).
 
 ### Pasos
-1. Clonar el repositorio o descargar los archivos.
-2. Abrir una terminal en la carpeta del proyecto.
-3. Compilar:
-   ```bash
-   g++ main.cpp -o programa
-Ejecutar:
+1. Abrir una terminal en la carpeta donde está el archivo `main.cpp`.
+2. Escribir:  
+   `g++ main.cpp -o programa.exe`
+3. Luego ejecutar:  
+   `programa.exe`
 
-bash
-./programa   (en Linux/macOS)
-programa.exe (en Windows)
-Uso
-Al ejecutar, se mostrará un menú con las opciones:
+Si el usuario usa Linux o Mac, el comando para ejecutar es `./programa` (sin el .exe).
 
-Registrar estudiante: ingresa nombre y código.
-
-Atender estudiante: elimina y muestra al primero en la cola.
-
-Mostrar estudiantes en espera: lista todos en orden de llegada.
-
-Buscar estudiante por nombre: busca y muestra la posición si existe.
-
-Salir: termina el programa.
-
-Autor
+## Autor
 Alvaro Daniel Sillerico Cruz
+## Fecha
 27 de marzo del 2026
+## Materia
 Estructura de Datos
+## Paralelo
 Paralelo 1
+## Semestre
 Tercer Semestre
 Gestion 1-26
