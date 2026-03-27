@@ -31,3 +31,25 @@ Se emplea una **lista enlazada simple** con punteros `frente` y `final` para sim
 3. Compilar:
    ```bash
    g++ main.cpp -o programa
+Ejecutar:
+
+bash
+./programa   (en Linux/macOS)
+programa.exe (en Windows)
+Uso
+Al ejecutar, se mostrará un menú con las opciones:
+
+Registrar estudiante: ingresa nombre y código.
+
+Atender estudiante: elimina y muestra al primero en la cola.
+
+Mostrar estudiantes en espera: lista todos en orden de llegada.
+
+Buscar estudiante por nombre: busca y muestra la posición si existe.
+
+Salir: termina el programa.
+
+Autor
+Alvaro Daniel Sillerico Cruz
+27 de marzo de 2027
+Estructura de Datos
